@@ -1,0 +1,148 @@
+/* Google theke churi kora font */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+header{
+    background:#0D1B2A;
+    color:#E0E1DD;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img{
+    width: 100%;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width:1200px;
+
+}
+header .navbar{
+    display: flex;
+    padding: 30px;
+    padding-left: 50px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 15px;
+}
+.navbar .nav-logo .logo-text{
+    color: #218ee1;
+    font-size: 2rem;
+    font-weight:bold;
+}
+.navbar .nav-menu .nav-link{
+    padding: 10px 18px;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    color: #218ee1;
+    font-size: 1.12rem;
+    border-radius: 50px;
+    transition: 0.3s ease; 
+}
+.navbar .nav-menu .nav-link:hover{
+    color: rgb(0, 0, 0);
+    background-color: #218ee1;
+    transform: scale(1.05);
+    font-size: larger;
+}
+.nickname{
+    color: #218ee1;
+}
+.hero-details {
+    flex: 1;
+}
+.skill {
+  font-size: 1.2rem;
+  margin: 15px 0 25px;
+  color: #fff;
+}
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #E0E1DD;
+}
+.hero-section{
+    min-height: 100vh;
+    background-color: #1B263B;
+    color: #E0E1DD;
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.hero-image{
+    flex: 1;
+    max-width: 500px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.button {
+  display: flex;
+  gap: 20px;
+}
+
+.button-Contact , .about {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.button-Contact {
+  background-color: #218ee1;
+}
+.button-Contact:hover {
+  font-size: large;
+}
+
+.about {
+  background-color: #F4A261;
+}
+
+.about:hover {
+  font-size: large;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    background-color: #0D1B2A;
+    align-items: center;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    list-style:none;
+    gap: 20px;
+    padding: 20px;
+}
+.footer-text{
+    color:#fff
+}
+.social-links a{
+    color: #fff;
+    font-size: 1rem;
+}
