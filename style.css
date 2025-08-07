@@ -363,6 +363,7 @@ h3{
       flex-direction: column;
       justify-content: center;
     align-items: center;
+      padding:20px;
   }
   .mail-icon{
     width: 400px;
@@ -430,3 +431,4 @@ body.mobile .navbar .nav-menu {
     width: 100%;
     text-align: center;
 } }
+
