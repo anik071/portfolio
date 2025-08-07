@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-
+html,body{
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -15,8 +17,11 @@
 header{
     background:#0D1B2A;
     color:#E0E1DD;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 ul{
@@ -36,7 +41,7 @@ button{
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
-    max-width:1200px;
+    max-width:1300px;
 
 }
 header .navbar{
@@ -73,9 +78,9 @@ header .navbar{
 .nickname{
     color: #218ee1;
 }
-.hero-details {
+/* .hero-details {
     flex: 1;
-}
+} */
 .Skill {
   font-size: 1.2rem;
   margin: 15px 0 25px;
@@ -101,8 +106,9 @@ header .navbar{
     gap: 40px;
 }
 .hero-image{
-    flex: 1;
+    /* flex: 1; */
     max-width: 500px;
+    height: auto;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -218,42 +224,57 @@ header .navbar{
     padding-left: 5px;
 }
 .skill-section{
+    display: flex;
+    justify-content: space-between;
     background-color: #1B263B ;
     color: #ffffff;
     padding: 30px;
-    padding-right: 500px;
+    padding-right: 20px;
     margin: auto;
     margin-bottom: 20px;
     line-height: 2;
 }
 .skill ul{
+    padding: 20px;
     gap: 20px;
     line-height: 2;
     list-style:disc;
 }
 .skill-image{
-   /* width: 100%;
-    height: 100%; */
+   width: 100%;
+    height: 100%;
     border-radius: 50px;
     object-fit:cover;
-    max-width: fit-content;
+    max-width:550px;
+}
+.skill-item h3{
+    font-size: 1.2rem;
+    color:#F4A261;
+    font-weight: 600;
+}
+h3{
+    width: 100%;
+    height: auto;
 }
 .some{
     display: flex;
     justify-content: space-between;
     margin: 40px;
-    margin-bottom: 60px;
-    gap: 40px;
+    margin-bottom: 50px;
+    gap: 50px;
     padding-left: 50px;
 }
-.contact-section{
+.cont .contact-section{
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
-    padding: 20px;
+    /* overflow: hidden; */
+    padding: 10px;
     margin: 15px;
+    margin-top: 70px;
+    padding: 5px;
     padding-left: 50px;
 }
+
 .icon{
     object-fit: cover;
     max-width: 50px;
@@ -286,6 +307,126 @@ header .navbar{
     color: #218ee1;
     font-size: 1.5rem;
     padding: 20px;
+    padding-top: 30px;
     max-width: 200px;
     
 }
+.mail-icon{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.navbar :where(#menu_open, #menu_close) {
+    display: none;
+} 
+
+@media screen and (max-width: 768px){
+    .hero-section .section-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px;
+  }
+  .aboutMe {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .education-1, .education-2 {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    border: none;
+  }
+  .some {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .skill-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .skill-image{
+    width: 90%;
+    height: auto;
+    align-items: center;
+    max-width: 400px;
+  }
+  .cont .contact-section{
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+  }
+  .mail-icon{
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+  }
+  .menu-toggle{
+    display: block;
+    font-size: 2rem;
+    color: #218ee1;
+    cursor: pointer;
+}
+.footer-content{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.navbar :where(#menu_open, #menu_close) {
+    display: block;
+    font-size: larger;
+}
+.navbar #menu_close{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: #218ee1;
+    font-size: 1.3rem;
+}
+.navbar #menu_open{
+    color: #218ee1;
+    font-size: 1.3rem;
+}
+body.mobile header::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.navbar .nav-menu {
+    display: block;
+    position: fixed;
+    left: -300px;
+    top:0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-color: #0D1B2A;
+    transition: left 0.3s ease;
+}
+body.mobile .navbar .nav-menu {
+    left: 0;
+}
+.navbar .nav-menu .nav-link {
+    display: block;
+    margin-top: 17px;
+    font-size: 1.3rem;
+    width: 100%;
+    text-align: center;
+} }
