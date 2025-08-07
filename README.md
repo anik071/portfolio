@@ -1,8 +1,10 @@
 # Portfolio
-# 💼 Personal Portfolio Website
+# 👨‍💻 Abdul Kader Anik - Portfolio Website
 
-Welcome to my **personal portfolio website**!  
-This project showcases my skills, projects, and contact information in a responsive and interactive design — built using **HTML** and **CSS** and **JavaScript**.
+Welcome to my personal portfolio website!  
+I'm **Abdul Kader Anik**, a competitive programmer and a Computer Science student at **Shanto-Mariam University of Creative Technology**.
+
+This site showcases my background, skills, achievements, and ways to connect with me.
 
 ---
 
@@ -42,27 +44,44 @@ This project showcases my skills, projects, and contact information in a respons
 
 ---
 
+## 🧑‍💻 Technologies Used
+
+- **HTML5**
+- **CSS3**
+- **JavaScript (Vanilla)** – For interactivity and DOM manipulation
+- **Responsive Design** (Media Queries)
+- **Font Awesome** (for icons)
+- **Google Fonts**
+
+---
+
 ## 🎨 Color Palette Used
 
-| Purpose       | Color           | Code       |
-|---------------|------------------|------------|
-| Background    | Light Blue       | `#A8F1FF`  |
-| Highlight     | Soft Orange      | `#FFA76D`  |
-| Primary Text  | Dark Blue        | `#1B263B`  |
-| Accent Text   | Bright Blue      | `#218ee1`  |
-| Button 1      | Blue Gradient    | `#2998FF`  |
-| Button 2      | Soft Orange      | `#FFA76D`  |
+| Purpose       | Description       | Hex Code     |
+|---------------|-------------------|--------------|
+| Background    | Dark Navy         | `#1f2739`     |
+| Header        | Deeper Navy       | `#141b29`     |
+| Primary Text  | Light Gray        | `#d6d6d6`     |
+| Accent Text   | Muted Blue        | `#677489`     |
+| Name Highlight| Bright Blue       | `#3193f5`     |
+| Button 1      | Blue Button       | `#3193f5`     |
+| Button 2      | Orange Button     | `#f5a25b`     |
 
 ---
 
 ## 📱 Responsive Design
 
-This website uses `@media` queries to adapt the layout for different screen sizes.  
-On smaller devices (max-width: 768px), the sections stack vertically and paddings adjust for a clean experience.
+This website is designed to work smoothly on:
+
+- Desktop
+- Tablet
+- Mobile
+
+It uses `@media` queries to adapt the layout on different screen sizes.
 
 ---
 
-## 🧑‍💻 Author
+## 🧑‍💻 Author's Contact
 
 **Abdul Kader Anik**  
 📧 [Email Me](mailto:anik.232071071@smuct.ac.bd)  
