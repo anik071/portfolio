@@ -21,17 +21,6 @@ This site showcases my background, skills, achievements, and ways to connect wit
 
 ---
 
-## 📁 Folder Structure
-
-/portfolio
-│
-├── index.html → Main HTML file
-├── style.css → All styling and layout
-├── hero-section-photo.png (or any image you used)
-├── /assets → (Optional) Additional images or icons
-└── README.md → This file
-
----
 
 ## 🛠️ Features
 
@@ -39,7 +28,7 @@ This site showcases my background, skills, achievements, and ways to connect wit
 - ✅ Smooth Navigation Bar
 - ✅ Hero Section with Profile and Buttons
 - ✅ About Me & Skills Section
-- ✅ Social Links (Email, WhatsApp, GitHub, LinkedIn, etc.)
+- ✅ Social Links (Email, FaceBook, WhatsApp, GitHub etc.)
 - ✅ Clean, modern UI using Google Fonts
 
 ---
@@ -92,3 +81,12 @@ It uses `@media` queries to adapt the layout on different screen sizes.
 ## 📌 License
 
 This project is free to use under the [MIT License](LICENSE).
+
+---
+## 🛠️ Installation
+
+To run locally : 
+```bash
+git clone https://github.com/anik071/portfolio.git
+cd portfolio
+open index.html
