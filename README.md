@@ -2,13 +2,13 @@
 # 💼 Personal Portfolio Website
 
 Welcome to my **personal portfolio website**!  
-This project showcases my skills, projects, and contact information in a responsive and interactive design — built using **HTML** and **CSS** only.
+This project showcases my skills, projects, and contact information in a responsive and interactive design — built using **HTML** and **CSS** and **JavaScript**.
 
 ---
 
 ## 📸 Preview
 
-![Portfolio Screenshot](image.png)
+(image.png)
 
 ---
 
