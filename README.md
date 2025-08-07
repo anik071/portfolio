@@ -8,7 +8,7 @@ This project showcases my skills, projects, and contact information in a respons
 
 ## 📸 Preview
 
-(image.png)
+![](image.png)
 
 ---
 
