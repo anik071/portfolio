@@ -15,7 +15,7 @@ This project showcases my skills, projects, and contact information in a respons
 ## 🌐 Live Site
 
 [🔗 Visit My Portfolio](https://anik071.github.io/portfolio/)  
-_Replace with your actual GitHub Pages link_
+
 
 ---
 
@@ -65,8 +65,8 @@ On smaller devices (max-width: 768px), the sections stack vertically and padding
 ## 🧑‍💻 Author
 
 **Abdul Kader Anik**  
-📧 [Email Me](mailto:your-email@example.com)  
-💬 [WhatsApp](https://wa.me/8801XXXXXXXXX)
+📧 [Email Me](mailto:anik.232071071@smuct.ac.bd)  
+💬 [WhatsApp](https://wa.me/8801880807633)
 
 ---
 
