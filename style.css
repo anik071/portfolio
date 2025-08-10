@@ -273,10 +273,9 @@ h3{
     display: flex;
     justify-content: space-between;
     /* overflow: hidden; */
-    padding: 10px;
-    margin: 15px;
+    padding: 20px;
+    margin: 25px;
     margin-top: 70px;
-    padding: 5px;
     padding-left: 50px;
 }
 
@@ -536,7 +535,6 @@ h3{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 15px;
     min-height: 50vh;
     max-height: 100vh;
   }
@@ -606,4 +604,5 @@ body.mobile .navbar .nav-menu {
     width: 100%;
     text-align: center;
 } }
+
 
