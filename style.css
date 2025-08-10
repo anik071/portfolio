@@ -537,7 +537,6 @@ h3{
     align-items: center;
     padding: 20px;
     margin-top: 15px;
-    padding-top: 5px;
     min-height: 50vh;
     max-height: 100vh;
   }
@@ -607,3 +606,4 @@ body.mobile .navbar .nav-menu {
     width: 100%;
     text-align: center;
 } }
+
