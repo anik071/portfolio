@@ -44,6 +44,9 @@ button{
     max-width:1300px;
 
 }
+.nav-item{
+    white-space: nowrap;
+}
 header .navbar{
     display: flex;
     padding: 30px;
@@ -69,6 +72,7 @@ header .navbar{
     border-radius: 50px;
     transition: 0.3s ease; 
 }
+
 .navbar .nav-menu .nav-link:hover{
     color: rgb(0, 0, 0);
     background-color: #218ee1;
@@ -265,6 +269,7 @@ h3{
     padding-left: 50px;
 }
 .cont .contact-section{
+    min-height: 80vh;
     display: flex;
     justify-content: space-between;
     /* overflow: hidden; */
@@ -318,10 +323,177 @@ h3{
     border-radius: 50%;
     object-fit: cover;
 }
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #007BFF, #0056b3);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.download-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
+  transform: translateY(-2px);
+}
+
+
 .navbar :where(#menu_open, #menu_close) {
     display: none;
 } 
+.bar::after{
+    content:"";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #218ee1;
+    margin: 10px 0 0;
+    border-radius: 30px;
+}
+.skills-title::after{
+    content:"";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #F6EEDD;
+    margin-top: 2px;
+    border-radius: 30px;
+}
+.dag::after{
+    content:"";
+    display: block;
+    width: 89.789px;
+    height: 4px;
+    background-color: #218ee1;
+    margin: 10px auto 10px;
+    border-radius: 30px;
+    
+}
 
+.Achievements-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center; 
+    min-height: 100vh;
+    margin-top: 80px;
+    padding: 40px;
+    padding-top: 60px;
+    background-color: #1B263B ;
+    color: #fff;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.headings{
+    text-align: center;
+    font-size: larger;
+    font-weight: 700;
+    padding: 40px;
+}
+
+
+.certificates{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+.certificate, .project{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.certificate img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* object-fit: fill; */
+    display: block;
+    /* overflow: hidden; */
+}
+
+.cert-text{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.706), #218ee1);
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.cert-text h2, .project-text h2{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.certificate:hover img ,.project:hover img{
+    transform: scale(1.1);
+}
+.certificate:hover .cert-text,.project:hover .project-text{
+    height: 100%;
+    transition: height 1s ease;
+
+}
+.project-text{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.706), #218ee1);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-gap: 20px;
+}
+.project img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    /* object-fit: fill; */
+    display: block;
+    overflow: hidden;
+}
+.share{
+    margin-top: 20px;
+    color: #004085;
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
 @media screen and (max-width: 768px){
     .hero-section .section-content {
     flex-direction: column-reverse;
@@ -360,10 +532,14 @@ h3{
     max-width: 400px;
   }
   .cont .contact-section{
-      flex-direction: column;
-      justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-      padding:20px;
+    padding: 20px;
+    margin-top: 15px;
+    padding-top: 5px;
+    min-height: 50vh;
+    max-height: 100vh;
   }
   .mail-icon{
     width: 400px;
@@ -431,4 +607,3 @@ body.mobile .navbar .nav-menu {
     width: 100%;
     text-align: center;
 } }
-
